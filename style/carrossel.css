@@ -64,3 +64,6 @@
   padding: 1em 2.2em;
   background-color: var(--yellow);
 }
+.descricao__nivel {
+  margin-bottom: 1em;
+}
