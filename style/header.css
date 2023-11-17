@@ -48,3 +48,43 @@
   font-weight: 500;
   color: var(--azul);
 }
+.container__titulo {
+  display: none;
+}
+.opcoes {
+  display: none;
+}
+
+/* responsivo para tablet */
+@media screen and (min-width: 1024px) {
+  .container__titulo {
+    /* necessario colocar display:block para aparecer novamente no media */
+    display: block;
+  }
+  .container__titulo,
+  .container__titulo--negrito {
+    font-family: var(--fonte-sencundaria);
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--preta);
+  }
+  .container__titulo--negrito {
+    font-weight: 700;
+  }
+  .opcoes {
+    display: flex;
+  }
+  .opcoes__item {
+    font-family: var(--fonte-principal);
+    color: var(--preta);
+    padding: 0 1em;
+  }
+  .opcoes__link {
+    text-decoration: none;
+    font-family: var(--fonte-principal);
+    color: var(--preta);
+  }
+  .container__imagem-transparente {
+    display: none;
+  }
+}
