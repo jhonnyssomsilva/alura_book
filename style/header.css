@@ -29,6 +29,15 @@
 .container__botao:checked ~ .lista-menu {
   display: block;
 }
+
+/* mudança de cor da imagem do menu hamburguer */
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer {
+  background-image: url(../imagens/Menu-black.svg);
+}
+.container__botao:checked ~ .container__rotulo {
+  background: var(--azul-degrade);
+}
+
 .container__botao {
   display: none;
 }
@@ -99,6 +108,20 @@
   }
   .opcao__botao {
     display: none;
+  }
+  .opcao__botao:checked ~ .opcoes__rotulo > .opcoes__item {
+    background: var(--azul-degrade);
+    color: var(--branco);
+  }
+  .opcoes__item {
+    padding: 1em 2em;
+  }
+  .lista-menu__item:hover {
+    background: var(--azul-degrade);
+  }
+  .lista-menu__item:hover > .lista-menu__link {
+    -webkit-text-fill-color: var(--branco);
+    text-decoration: none;
   }
 }
 

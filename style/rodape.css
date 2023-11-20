@@ -38,9 +38,13 @@ hr {
     text-decoration: none;
     font-family: var(--fonte-principal);
     font-size: 0.875rem;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--cinza-esc);
     margin-left: 0.6em;
+  }
+  .lista-rodape__link:hover {
+    color: var(--yellow);
+    font-weight: 400;
   }
 }
 @media screen and (min-width: 1728px) {

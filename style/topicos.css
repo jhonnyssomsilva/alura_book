@@ -27,6 +27,10 @@
   padding: 1em;
   background-color: var(--yellow);
 }
+.topico__link:hover {
+  color: var(--yellow);
+  background-color: var(--branco);
+}
 
 @media screen and (min-width: 1024px) {
   .topicos__titulo {
