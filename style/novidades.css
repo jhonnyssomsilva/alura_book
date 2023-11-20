@@ -31,3 +31,30 @@
   background: url(../imagens/Email.svg) no-repeat;
   padding-left: 2em;
 }
+
+@media screen and (min-width: 1024px) {
+  .novidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .novidades__titulo {
+    font-size: 1.5rem;
+  }
+  .novidades__texto {
+    font-size: 1.1rem;
+  }
+  .novidades__email::placeholder {
+    font-size: 1rem;
+  }
+  .novidades__email {
+    font-size: 1.1rem;
+  }
+  .novidades__descricao {
+    margin-right: 1em;
+    width: 30%;
+  }
+  .novidades__email {
+    width: 30%;
+  }
+}
