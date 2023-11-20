@@ -54,6 +54,9 @@
 .opcoes {
   display: none;
 }
+.container__texto {
+  display: none;
+}
 
 /* responsivo para tablet */
 @media screen and (min-width: 1024px) {
@@ -95,6 +98,33 @@
     width: auto;
   }
   .opcao__botao {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .container__texto {
+    display: block;
+  }
+  .cabecalho {
+    padding: 0 2em;
+  }
+  .opcoes {
+    margin-right: auto;
+  }
+  .container__link,
+  .container__imagem {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  .container__texto {
+    font-family: var(--fonte-principal);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--preta);
+  }
+  .cabecalho__menu-hamburguer {
     display: none;
   }
 }
